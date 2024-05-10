@@ -124,6 +124,8 @@ module.exports = class extends Component {
             {meta && meta.length ? <MetaTags meta={meta} /> : null}
 
             <title>{getPageTitle(page, config.title, helper)}</title>
+            
+            <script src="https://kit.fontawesome.com/9454be34e9.js" crossorigin="anonymous"></script>
 
             <WebApp.Cacheable
                 helper={helper}
