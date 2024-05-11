@@ -14,7 +14,8 @@
             "description": "Icarus theme variant, can be \"default\" or \"cyberpunk\"",
             "enum": [
                 "default",
-                "cyberpunk"
+                "cyberpunk",
+                "dark"
             ],
             "default": "default"
         },

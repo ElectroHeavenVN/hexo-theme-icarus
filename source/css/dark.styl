@@ -4,6 +4,7 @@ $color-primary = #d6d6d6
 $color-bg-primary = #202020
 $color-bg-primary2 = #2a2a2a
 $color-bg-primary3 = #404040
+$color-bg-primary4 = #505050
 $link-hover = #1f4e9a
 
 body {
@@ -106,4 +107,22 @@ a:hover {
 
 ::-webkit-scrollbar-corner {
     background: transparent;
+}
+
+strong {
+    color: white
+}
+
+article.article .content code {
+    background-color: black
+}
+
+.button.is-light, article.article .article-more {
+    background-color: $color-bg-primary3;
+    color: $color-primary
+}
+
+.button.is-light:hover, article.article .article-more:hover, .button.is-light.is-hovered, article.article .article-more.is-hovered {
+    background-color: $color-bg-primary4
+    color: $color-primary
 }
