@@ -1,0 +1,109 @@
+@import 'style'
+
+$color-primary = #d6d6d6
+$color-bg-primary = #202020
+$color-bg-primary2 = #2a2a2a
+$color-bg-primary3 = #404040
+$link-hover = #1f4e9a
+
+body {
+    background-color: black
+    color: white
+}
+
+.navbar {
+    background-color: $color-bg-primary
+    .navbar-item, .navbar-link {
+        color: $color-primary
+    }
+}
+
+.navbar-menu {
+    background-color: $color-bg-primary
+}
+
+a.navbar-item:focus, .navbar-link:focus, a.navbar-item:focus-within, .navbar-link:focus-within, a.navbar-item:hover, .navbar-link:hover, a.navbar-item.is-active, .navbar-link.is-active {
+        background-color: $color-bg-primary2
+}
+
+.card {
+    background-color: $color-bg-primary
+    color: $color-primary
+}
+
+article.article {
+    .article-meta, .article-tags {
+        color: $color-primary
+    }
+}
+
+.title {
+    color: $color-primary
+}
+
+.content {
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-primary
+    }
+}
+
+.menu-list {
+    a {
+        color: $color-primary
+    }
+    a:hover {
+        background-color: $color-bg-primary2
+        color: inherit
+    }
+    .tag {
+        background-color: $color-bg-primary3
+        color: $color-primary    
+    }
+}
+
+.menu-label {
+    color: $color-primary
+}
+
+.footer {
+    background-color: $color-bg-primary
+}
+
+a:hover {
+    color: $link-hover
+}
+
+.hljs {
+    background-color: $color-bg-primary2
+    color: white
+}
+
+.article-licensing {
+    background-color: $color-bg-primary2
+    color: $color-primary
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: .6rem;
+    background: black
+}
+
+::-webkit-scrollbar-track {
+    background: #23272a;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 3px solid #23272a;
+    border-radius: 20px;
+    background: #515b62;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5d6870;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
