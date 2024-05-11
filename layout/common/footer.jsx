@@ -50,7 +50,7 @@ class Footer extends Component {
                                 const link = links[name];
                                 return <p class="control">
                                     <a class={`button is-transparent ${link.icon ? 'is-large' : ''}`} target="_blank" rel="noopener" title={name} href={link.url}>
-                                        {link.icon ? (link.icon.startsWith("img/") ? <img src={location.origin + location.pathname + link.icon}></img> : <i class={link.icon}></i>) : name}
+                                        {link.icon ? (link.icon.startsWith("img/") ? <img src={link.icon}></img> : <i class={link.icon}></i>) : name}
                                     </a>
                                 </p>;
                             })}
