@@ -11,7 +11,7 @@ class Profile extends Component {
             {links.filter(link => typeof link === 'object').map(link => {
                 return <a class="level-item button is-transparent is-marginless"
                     target="_blank" rel="me noopener" title={link.name} href={link.url}>
-                    {'icon' in link ? <i class={link.icon}></i> : link.name}
+                    {'icon' in link ? (/https?:\/\//.test(link.icon) ? <img src={link.icon}></img> : <i class={link.icon}></i>) : link.name}
                 </a>;
             })}
         </div>;
